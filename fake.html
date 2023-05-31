@@ -1,67 +1,41 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="UTF-8">
-  <title>Minimalist Website</title>
-  <style>
-    /* Reset some default styles */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-    
-    /* Center the content vertically and horizontally */
-    body, html {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-    }
-    
-    /* Header styles */
-    .header {
-      background-color: #c7e8c9; /* Pastel green color */
-      padding: 10px;
-      display: flex;
-      align-items: center;
-    }
-    
-    .header img {
-      width: 48px;
-      height: 48px;
-      margin-right: 10px;
-    }
-    
-    .header-text {
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      font-weight: bold;
-    }
-    
-    /* Center the content vertically and horizontally */
-    .content {
-      flex: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    
-    /* Style the fake text */
-    .fake-text {
-      font-family: Arial, sans-serif;
-      font-size: 48px;
-      font-weight: bold;
-      color: #333;
-    }
-  </style>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+.bgimg {
+  background-color: black;
+  min-height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+.result {
+  text-align: center;
+}
+</style>
 </head>
 <body>
-  <div class="header">
-    <img src="icon48.png" alt="Logo">
-    <div class="header-text">Filipino Fake News Detector</div>
+
+<div class="bgimg w3-display-container w3-animate-opacity w3-text-white">
+  <div class="w3-display-topleft w3-padding-large w3-xlarge">
+    Filipino Fake News Detector
   </div>
-  <div class="content">
-    <div class="fake-text">FAKE</div>
+  <div class="w3-display-middle">
+    <h1 class="w3-jumbo w3-animate-top result">Fake</h1>
+    <hr class="w3-border-grey" style="margin:auto;width:40%">
+    <p class="w3-large w3-center">The highlighted text is fake according to our model.</p>
   </div>
+  <div class="w3-display-bottomleft w3-padding-large">
+    Project by Frongoso - Devilleres - Samonte - Sarmiento
+  </div>
+</div>
+
 </body>
 </html>
