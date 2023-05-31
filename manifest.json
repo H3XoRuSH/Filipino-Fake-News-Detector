@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Filipino Fake News Detector",
+  "version": "1.0",
+  "description": "Detects if a piece of text is fake.",
+  "permissions": [
+    "contextMenus",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "service_worker.js"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "action": {
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "content_security_policy": {},
+  "host_permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Minimalist Website</title>
+  <style>
+    /* Reset some default styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    /* Center the content vertically and horizontally */
+    body, html {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Header styles */
+    .header {
+      background-color: #c7e8c9; /* Pastel green color */
+      padding: 10px;
+      display: flex;
+      align-items: center;
+    }
+    
+    .header img {
+      width: 48px;
+      height: 48px;
+      margin-right: 10px;
+    }
+    
+    .header-text {
+      font-family: Arial, sans-serif;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    
+    /* Center the content vertically and horizontally */
+    .content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    /* Style the fake text */
+    .fake-text {
+      font-family: Arial, sans-serif;
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img src="icon48.png" alt="Logo">
+    <div class="header-text">Filipino Fake News Detector</div>
+  </div>
+  <div class="content">
+    <div class="fake-text">FAKE</div>
+  </div>
+</body>
+</html>
