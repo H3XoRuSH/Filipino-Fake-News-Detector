@@ -20,7 +20,13 @@ function sendHighlight(info) {
     .then(response => response.json())
     .then(data => {
       console.log(data.is_fake);
-      let base = data.is_fake ? "fake" : "not"; 
+      let base = "not" ;
+      if (data.is_fake == 1) {
+        base = "fake";
+      }
+      if (data.is_fake == 2) {
+        base = "invalid";
+      }
       let link = base + ".html";
       chrome.tabs.create({ url: link });
     })
