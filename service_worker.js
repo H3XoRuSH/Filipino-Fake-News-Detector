@@ -10,7 +10,7 @@ function sendHighlight(info) {
   const highlightedText = info.selectionText;
   const requestData = { data: highlightedText };
 
-  fetch("https://faker-1-x8868933.deta.app/text", {
+  fetch("http://127.0.0.1:8000/api/text", {
     method: "POST",
     body: JSON.stringify(requestData),
     headers: {
@@ -19,8 +19,8 @@ function sendHighlight(info) {
   })
     .then(response => response.json())
     .then(data => {
-      console.log(data.fake);
-      let base = data.fake ? "fake" : "not"; 
+      console.log(data.is_fake);
+      let base = data.is_fake ? "fake" : "not"; 
       let link = base + ".html";
       chrome.tabs.create({ url: link });
     })
