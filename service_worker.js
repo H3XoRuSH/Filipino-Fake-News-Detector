@@ -23,10 +23,11 @@ function sendHighlight(info) {
   .then(data => {
     console.log(data.is_fake);
     let base = "not" ;
-    if (data.is_fake == 1) {
+    let detector = data.is_fake_logistic_regression;
+    if (detector == 1) {
       base = "fake";
     }
-    if (data.is_fake == 2) {
+    if (detector == 2) {
       base = "invalid";
     }
     let link = base + ".html";
