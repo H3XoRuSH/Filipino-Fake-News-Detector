@@ -31,7 +31,7 @@ function sendHighlight(info) {
       base = "invalid";
     }
     let link = base + ".html";
-    chrome.tabs.create({ url: "https://tuod.vercel.app/" });
+    chrome.tabs.create({ url: link });
   })
 
   .catch(error => {
