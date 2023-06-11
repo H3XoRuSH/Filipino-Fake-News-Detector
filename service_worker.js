@@ -23,7 +23,7 @@ function sendHighlight(info) {
   .then(data => {
     console.log(data.is_fake);
     let base = "not" ;
-    let detector = data.is_fake_logistic_regression;
+    let detector = data.is_fake;
     if (detector == 1) {
       base = "fake";
     }
@@ -31,7 +31,7 @@ function sendHighlight(info) {
       base = "invalid";
     }
     let link = base + ".html";
-    chrome.tabs.create({ url: link });
+    chrome.tabs.create({ url: "https://tuod.vercel.app/" });
   })
 
   .catch(error => {
