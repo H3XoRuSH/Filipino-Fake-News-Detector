@@ -10,7 +10,7 @@ function sendHighlight(info) {
   const highlightedText = info.selectionText;
   const requestData = { data: highlightedText };
 
-  fetch("https://faker-nyyn.onrender.com/api/text", {
+  fetch("http://localhost:8000/api/text", {
     method: "POST",
     body: JSON.stringify(requestData),
     headers: {
