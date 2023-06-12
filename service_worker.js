@@ -31,7 +31,7 @@ function sendHighlight(info) {
       base = "invalid";
     }
     let link = base + ".html";
-    chrome.tabs.create({ url: link });
+    chrome.tabs.create({ url: `https://tuod.vercel.app/${base}?svm=${data.is_fake_svm}&&logistic_regression=${data.is_fake_logistic_regression}` });
   })
 
   .catch(error => {
